@@ -27,7 +27,7 @@ from handlers.reminders import text_handler
 # load .env
 load_dotenv()
 TOKEN = os.getenv("TG_TOKEN")
-CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", "60"))
+CHECK_INTERVAL = int(os.getenv("CHECK_INTERVAL", "10"))
 
 if not TOKEN:
     raise ValueError("Ошибка: TG_TOKEN не найден. Проверь .env")
