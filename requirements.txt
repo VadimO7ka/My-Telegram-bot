@@ -1,5 +1,5 @@
-# Важно: используйте Python 3.10 или 3.11 для корректной работы python-telegram-bot 20.x
-python-telegram-bot==20.8
+# Обновлено для совместимости с Python 3.13
+python-telegram-bot==21.9
 python-dateutil
 apscheduler
 python-dotenv

@@ -3,6 +3,18 @@
   <component name="GhostTextManager">
     <option name="inputs">
       <map>
+        <entry key="==&gt; Running 'python bot.py'&#10;INFO:__main__:Webhook очищен (sync HTTP).&#10;ERROR:__main__:Неожиданная ошибка в основном цикле.&#10;Traceback (most recent call last):&#10;  File &quot;/opt/render/project/src/bot.py&quot;, line 102, in &lt;module&gt;&#10;    main()&#10;    ~~~~^^&#10;  File &quot;/opt/render/project/src/bot.py&quot;, line 83, in main&#10;    app = ApplicationBuilder().token(TOKEN).build()&#10;  File &quot;/opt/render/project/src/.venv/lib/python3.13/site-packages/telegram/ext/_applicationbuilder.py&quot;, line 312, in build&#10;    updater = Updater(bot=bot, update_queue=update_queue)&#10;  File &quot;/opt/render/project/src/.venv/lib/python3.13/site-packages/telegram/ext/_updater.py&quot;, line 128, in __init__&#10;    self.__polling_cleanup_cb: Optional[Callable[[], Coroutine[Any, Any, None]]] = None&#10;    ^^^^^^^^^^^^^^^^^^^^^^^^^&#10;AttributeError: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758375854474" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="@&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; @&lt;file_name&gt; проверь на ошибки">
           <value>
             <GhostTextMetaData>
@@ -10,6 +22,30 @@
               <option name="timestamps">
                 <list>
                   <option value="1758374232501" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="как я могу закинуть в гит тепреь">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758374535134" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="ты видишь что ошибки выходят в терминале">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758374647691" />
                 </list>
               </option>
             </GhostTextMetaData>
