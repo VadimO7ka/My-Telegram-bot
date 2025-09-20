@@ -94,7 +94,7 @@ def main():
 
     logger.info("Запускаю бота — app.run_polling() (Ctrl+C для остановки)...")
     # Запуск polling (блокирующий) — библиотека сама управляет event loop
-    app.run_polling()
+    app.run_polling(drop_pending_updates=True)
 
 
 if __name__ == "__main__":
