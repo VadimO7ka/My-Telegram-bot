@@ -10,3 +10,5 @@ services:
     envVars:
       - key: CHECK_INTERVAL
         value: "10"
+      - key: TG_TOKEN
+        sync: false
