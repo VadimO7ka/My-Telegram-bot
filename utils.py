@@ -31,11 +31,15 @@ def parse_user_datetime(text: str, user_tz: str | None = None) -> datetime:
             if match:
                 delta = delta_func(match)
                 result_time = now + delta
-                print(f"DEBUG: Текст='{text}', Паттерн='{pattern}', Найдено='{match.group()}', Дельта={delta}, Результат={result_time}")
+                import logging
+                logger = logging.getLogger(__name__)
+                logger.info(f"PARSE_TIME: Текст='{text}', Паттерн='{pattern}', Найдено='{match.group()}', Дельта={delta}, Результат={result_time}")
                 return result_time
 
         # Если ни один паттерн не сработал
-        print(f"DEBUG: Не найден паттерн для текста '{text}'")
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info(f"PARSE_TIME: Не найден паттерн для текста '{text}'")
 
     # Если не относительное время, используем стандартный парсер
     try:
