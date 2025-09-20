@@ -17,8 +17,8 @@ from telegram.ext import (
 )
 
 # Проверка версии Python (рекомендуется <=3.11 для python-telegram-bot 20.x)
-if sys.version_info >= (3, 12):
-    raise RuntimeError("python-telegram-bot 20.x не поддерживает Python 3.12+ (используйте Python 3.10–3.11)")
+if sys.version_info < (3, 10) or sys.version_info >= (3, 12):
+    raise RuntimeError("python-telegram-bot 20.x поддерживает только Python 3.10–3.11")
 
 # импорт твоих модулей (предполагаю, они есть по-прежнему)
 from db import init_db, get_due_reminders, mark_reminder_inactive, update_reminder_next
