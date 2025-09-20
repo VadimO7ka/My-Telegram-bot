@@ -1,3 +1,4 @@
+# Важно: используйте Python 3.10 или 3.11 для корректной работы python-telegram-bot 20.x
 python-telegram-bot==20.8
 python-dateutil
 apscheduler
