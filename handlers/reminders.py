@@ -30,7 +30,15 @@ async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if text.lower().startswith("напомни") or "|" in text:
             # попытаемся создать напоминание прямо
             try:
-                when_part, message_part = text.split("|", 1) if "|" in text else text.split(" ", 1)[1:]
+                if "|" in text:
+                    when_part, message_part = text.split("|", 1)
+                else:
+                    # для случая "напомни через 10 минут сделать что-то"
+                    parts = text.split(" ", 2)
+                    if len(parts) < 3:
+                        raise ValueError("Недостаточно частей в сообщении")
+                    when_part = parts[1]  # "через 10 минут"
+                    message_part = parts[2]  # "сделать что-то"
                 user_tz = context.user_data.get('tz') or None
                 dt_utc = parse_user_datetime(when_part, user_tz)
                 iso_utc = dt_utc.isoformat(sep=' ')

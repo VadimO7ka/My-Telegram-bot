@@ -1,6 +1,5 @@
-````gitignore
 .env
 __pycache__/
 *.pyc
 .venv/
-````
+assistant.db
