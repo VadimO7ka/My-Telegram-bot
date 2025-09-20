@@ -3,6 +3,30 @@
   <component name="GhostTextManager">
     <option name="inputs">
       <map>
+        <entry key="==&gt; Port scan timeout reached, no open ports detected. Bind your service to at least one port. If you don't need to receive traffic on any port, create a background worker instead.&#10;     ==&gt; Docs on specifying a port: https://render.com/docs/web-services#port-binding">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758376682658" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="==&gt; Running 'python bot.py'&#10;INFO:__main__:Webhook очищен (sync HTTP).&#10;/opt/render/project/src/bot.py:93: PTBUserWarning: No `JobQueue` set up. To use `JobQueue`, you must install PTB via `pip install &quot;python-telegram-bot[job-queue]&quot;`.&#10;  app.job_queue.run_repeating(job_check_reminders, interval=CHECK_INTERVAL, first=10)&#10;ERROR:__main__:Неожиданная ошибка в основном цикле.&#10;Traceback (most recent call last):&#10;  File &quot;/opt/render/project/src/bot.py&quot;, line 102, in &lt;module&gt;&#10;    main()&#10;    ~~~~^^&#10;  File &quot;/opt/render/project/src/bot.py&quot;, line 93, in main&#10;    app.job_queue.run_repeating(job_check_reminders, interval=CHECK_INTERVAL, first=10)&#10;    ^^^^^^^^^^^^^^^^^^^^^^^^^^^&#10;AttributeError: 'NoneType' object has no attribute 'run_repeating'">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758376224428" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="==&gt; Running 'python bot.py'&#10;INFO:__main__:Webhook очищен (sync HTTP).&#10;ERROR:__main__:Неожиданная ошибка в основном цикле.&#10;Traceback (most recent call last):&#10;  File &quot;/opt/render/project/src/bot.py&quot;, line 102, in &lt;module&gt;&#10;    main()&#10;    ~~~~^^&#10;  File &quot;/opt/render/project/src/bot.py&quot;, line 83, in main&#10;    app = ApplicationBuilder().token(TOKEN).build()&#10;  File &quot;/opt/render/project/src/.venv/lib/python3.13/site-packages/telegram/ext/_applicationbuilder.py&quot;, line 312, in build&#10;    updater = Updater(bot=bot, update_queue=update_queue)&#10;  File &quot;/opt/render/project/src/.venv/lib/python3.13/site-packages/telegram/ext/_updater.py&quot;, line 128, in __init__&#10;    self.__polling_cleanup_cb: Optional[Callable[[], Coroutine[Any, Any, None]]] = None&#10;    ^^^^^^^^^^^^^^^^^^^^^^^^^&#10;AttributeError: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes">
           <value>
             <GhostTextMetaData>
@@ -27,6 +51,18 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="INFO:httpx:HTTP Request: POST https://api.telegram.org/bot7948578566:AAEyZ3PVYe7fUvN62OV5M7GgeYeG1Tugf-0/sendMessage &quot;HTTP/1.1 200 OK&quot;&#10;INFO:apscheduler.executors.default:Job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:25:50 UTC)&quot; executed successfully&#10;INFO:httpx:HTTP Request: POST https://api.telegram.org/bot7948578566:AAEyZ3PVYe7fUvN62OV5M7GgeYeG1Tugf-0/getUpdates &quot;HTTP/1.1 200 OK&quot;&#10;INFO:apscheduler.executors.default:Running job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:25:59 UTC)&quot; (scheduled at 2025-09-20 14:25:49.643737+00:00)&#10;INFO:apscheduler.executors.default:Job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:25:59 UTC)&quot; executed successfully&#10;INFO:apscheduler.executors.default:Running job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:26:00 UTC)&quot; (scheduled at 2025-09-20 14:25:50.627028+00:00)&#10;INFO:apscheduler.executors.default:Job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:26:00 UTC)&quot; executed successfully&#10;INFO:httpx:HTTP Request: POST https://api.telegram.org/bot7948578566:AAEyZ3PVYe7fUvN62OV5M7GgeYeG1Tugf-0/getUpdates &quot;HTTP/1.1 200 OK&quot;&#10;INFO:httpx:HTTP Request: POST https://api.telegram.org/bot7948578566:AAEyZ3PVYe7fUvN62OV5M7GgeYeG1Tugf-0/getUpdates &quot;HTTP/1.1 200 OK&quot;&#10;INFO:httpx:HTTP Request: POST https://api.telegram.org/bot7948578566:AAEyZ3PVYe7fUvN62OV5M7GgeYeG1Tugf-0/sendMessage &quot;HTTP/1.1 200 OK&quot;&#10;INFO:apscheduler.executors.default:Running job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:26:09 UTC)&quot; (scheduled at 2025-09-20 14:25:59.643737+00:00)&#10;INFO:apscheduler.executors.default:Job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:26:09 UTC)&quot; executed successfully&#10;INFO:apscheduler.executors.default:Running job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:26:10 UTC)&quot; (scheduled at 2025-09-20 14:26:00.627028+00:00)&#10;INFO:httpx:HTTP Request: POST https://api.telegram.org/bot7948578566:AAEyZ3PVYe7fUvN62OV5M7GgeYeG1Tugf-0/sendMessage &quot;HTTP/1.1 200 OK&quot;&#10;INFO:apscheduler.executors.default:Job &quot;job_check_reminders (trigger: interval[0:00:10], next run at: 2025-09-20 14:26:10 UTC)&quot; executed successfully">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758378391327" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="как я могу закинуть в гит тепреь">
           <value>
             <GhostTextMetaData>
@@ -39,6 +75,78 @@
             </GhostTextMetaData>
           </value>
         </entry>
+        <entry key="он не может нормально считать время, на 1 минуту он говорит через 10 секунд">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758378246436" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="попробуй протестировать сам">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758378922019" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="почему время не совпадает? я привел пример на 5 секунд, а уведомление об этом пришло только через 38. это проблема сервера?">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758376905479" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="почему я в гите могу найти свой токен?">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758375952681" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="проверь пожалуйста срабатывания на малое количество времени">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758378736352" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="рассмотри еще секунды">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758378703600" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
         <entry key="ты видишь что ошибки выходят в терминале">
           <value>
             <GhostTextMetaData>
@@ -46,6 +154,30 @@
               <option name="timestamps">
                 <list>
                   <option value="1758374647691" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="я обновил время чтобы оно обновлялось каждые 10 сек">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758377262476" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="я попросил через 5 минут, а он прислал через 2">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1758378606453" />
                 </list>
               </option>
             </GhostTextMetaData>

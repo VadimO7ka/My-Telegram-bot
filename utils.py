@@ -20,17 +20,22 @@ def parse_user_datetime(text: str, user_tz: str | None = None) -> datetime:
     if "через" in text:
         # Паттерны для парсинга относительного времени
         patterns = [
-            (r'через\s+(\d+)\s+секунд', lambda m: timedelta(seconds=int(m.group(1)))),
-            (r'через\s+(\d+)\s+минут', lambda m: timedelta(minutes=int(m.group(1)))),
-            (r'через\s+(\d+)\s+час', lambda m: timedelta(hours=int(m.group(1)))),
-            (r'через\s+(\d+)\s+дн', lambda m: timedelta(days=int(m.group(1)))),
+            (r'через\s+(\d+)\s+секунд[уы]?', lambda m: timedelta(seconds=int(m.group(1)))),
+            (r'через\s+(\d+)\s+минут[уы]?', lambda m: timedelta(minutes=int(m.group(1)))),
+            (r'через\s+(\d+)\s+час[а]?[ов]?', lambda m: timedelta(hours=int(m.group(1)))),
+            (r'через\s+(\d+)\s+дн[ейя]', lambda m: timedelta(days=int(m.group(1)))),
         ]
 
         for pattern, delta_func in patterns:
             match = re.search(pattern, text)
             if match:
                 delta = delta_func(match)
-                return now + delta
+                result_time = now + delta
+                print(f"DEBUG: Текст='{text}', Паттерн='{pattern}', Найдено='{match.group()}', Дельта={delta}, Результат={result_time}")
+                return result_time
+
+        # Если ни один паттерн не сработал
+        print(f"DEBUG: Не найден паттерн для текста '{text}'")
 
     # Если не относительное время, используем стандартный парсер
     try:
